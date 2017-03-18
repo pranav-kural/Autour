@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "build-routes": "babel routes -d babel_compiled/routes", // compile the routes files
+    "build-ctrls": "babel controllers -d babel_compiled/controllers" // compile the controller files
   },
   "dependencies": {
     "body-parser": "~1.16.0",
@@ -15,5 +17,9 @@
     "serve-favicon": "~2.3.2"
   },
   "author": "Pranav Kural",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-env": "^1.2.2"
+  }
 }
