@@ -18,7 +18,7 @@ var users = require('./app_mvc/users');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'app_mvc', 'views'));
+app.set('views', path.join(__dirname, 'app_mvc_dev', 'views'));
 app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
