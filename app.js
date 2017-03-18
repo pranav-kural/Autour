@@ -17,6 +17,11 @@ var users = require('./app_mvc/routes/users');
 
 var app = express();
 
+// include the mongoose module
+var mongoose = require('mongoose');
+// setup the MLAB connection using the configurations in globals.js under the config folder
+var conn = mongoose.connection.open(require('./config/globals').db);
+
 // view engine setup
 app.set('views', path.join(__dirname, 'app_mvc', 'views'));
 app.set('view engine', 'jade');
