@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "build-routes": "babel routes -d babel_compiled/routes", // compile the routes files
-    "build-ctrls": "babel controllers -d babel_compiled/controllers" // compile the controller files
+    "build-routes": "babel app_mvc_dev/routes -d app_mvc/routes",
+    "build-ctrls": "babel app_mvc_dev/controllers -d app_mvc/controllers"
   },
   "dependencies": {
     "body-parser": "~1.16.0",
