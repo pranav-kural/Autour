@@ -1,3 +1,3 @@
 module.exports = {
-    db: 'mongodb://pranavkural:*******@ds127948.mlab.com:27948/comp2068'
+    db: 'mongodb://pranavkural:9855032878@ds127948.mlab.com:27948/comp2068'
 };
